@@ -18,5 +18,11 @@ to `var/tree.json` using write-then-rename replacement.
 npm test
 ```
 
+## Container
+
+The included `Dockerfile` runs the service as a non-root user, listens on port
+`8787`, and persists data under `/app/var`. The complete frontend/backend setup
+is defined by `compose.yaml` in `project-auto-treeview-contract`.
+
 This implements contract version `0.1.0` from
 `project-auto-treeview-contract`. Merge the contract PR first.
